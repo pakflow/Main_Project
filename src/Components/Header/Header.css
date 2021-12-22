@@ -14,10 +14,7 @@ nav:hover {
   background: rgba(0, 0, 0, 0.638);
   color: rgb(167, 167, 167);
 }
-.nav-active {
-  background: rgba(0, 0, 0, 0.638);
-  color: rgb(167, 167, 167);
-}
+
 .nav-item {
   cursor: pointer;
   width: 150px;
@@ -27,17 +24,11 @@ nav:hover {
   align-items: center;
 }
 
-.nav-item-active {
-  color: white;
-  cursor: pointer;
-  width: 150px;
-  height: 50%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .nav-item:hover {
   color: white;
+}
+.nav-item:hover .dropdown-menu {
+  display: flex;
 }
 
 .icon_navbar {
@@ -45,9 +36,19 @@ nav:hover {
   height: 100px;
   cursor: pointer;
 }
+.all {
+  position: relative;
+}
+
+.new {
+  position: relative;
+}
 
 .dropdown-menu {
-  display: flex;
+  position: absolute;
+  top: 75px;
+  left: -262px;
+  display: none;
   flex-direction: column;
   margin-left: 19.1vw;
   width: 150px;
@@ -55,17 +56,15 @@ nav:hover {
   color: black;
   background: rgba(255, 255, 255, 0.85);
   line-height: 25px;
+  animation-duration: 0.1s;
+  animation-name: slidein;
+  font-size: 20px;
 }
 
 .dropdown-menu p {
   margin-top: 4px;
   margin-left: 5px;
   cursor: pointer;
-}
-
-.dropdown-menu {
-  animation-duration: 0.1s;
-  animation-name: slidein;
 }
 
 @keyframes slidein {

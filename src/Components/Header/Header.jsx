@@ -3,7 +3,6 @@ import pattalogo from "../Icons/pattalogo.svg";
 import "./Header.css";
 
 const Header = () => {
-  const [showAll, setShowAll] = useState(false);
   return (
     <div
       style={{
@@ -14,60 +13,44 @@ const Header = () => {
         zIndex: 2,
       }}
     >
-      <nav
-        className={showAll ? "nav-active" : ""}
-      >
-        <img
-          className="icon_navbar nav-item"
-          onMouseEnter={() => setShowAll(false)}
-          src={pattalogo}
-          alt="patta"
-        />
-        <p
-          className={showAll ? "nav-item-active" : "nav-item all"}
-          onMouseEnter={() => setShowAll(true)}
-        >
+      <nav className="nav-active">
+      <div>user</div>
+      <div></div>
+        <img className="icon_navbar nav-item" src={pattalogo} alt="patta" />
+        <p className="nav-item all">
           All
+          <div className="dropdown-menu drp_all">
+            <p>ALL SHOES</p>
+            <p>NEW</p>
+            <p>HOME</p>
+            <p>LIMITED EDITION</p>
+            <p>HIGH</p>
+            <p>MIDDLE</p>
+            <p>LOW</p>
+            <p>BRANDS</p>
+            <p>HISTORIES</p>
+            <p>ACCESSORIES</p>
+          </div>
         </p>
-        <p className="nav-item" onMouseEnter={() => setShowAll(false)}>
+        <p className="nav-item new">
           NEW
+          <div className="dropdown-menu drp_new">
+            <p>SHOES</p>
+            <p>COLLECTIONS</p>
+            <p>COLLABORATIONS</p>
+            <p>TECHNOLOGIES</p>
+            <p>HIGH</p>
+            <p>MIDDLE</p>
+            <p>LOW</p>
+            <p>BRANDS</p>
+            <p>ACCESSORIES</p>
+            <p>SNEAKERNEWS</p>
+          </div>
         </p>
         <p className="nav-item">COMING SOON</p>
         <p className="nav-item">BRANDS</p>
         <p className="nav-item">SALES</p>
       </nav>
-      <div>
-        {showAll ? (
-          <div onMouseLeave={() => setShowAll(false)} className="dropdown-menu">
-            <p>ALL SHOES</p>
-            <p>NEW</p>
-            <p>SALES</p>
-            <p>SPORT STYLE</p>
-            <p>HIGH</p>
-            <p>MIDDLE</p>
-            <p>LOW</p>
-            <p>BRANDS</p>
-            <p>HISTORIES</p>
-            <p>ABOUT US</p>
-          </div>
-        ) : null}
-      </div>
-      {/* <div>
-        {showAll ? (
-          <div onMouseLeave={() => setShowAll(false)} className="dropdown-menu">
-            <p>ALL SHOES</p>
-            <p>NEW</p>
-            <p>SALES</p>
-            <p>SPORT STYLE</p>
-            <p>HIGH</p>
-            <p>MIDDLE</p>
-            <p>LOW</p>
-            <p>BRANDS</p>
-            <p>HISTORIES</p>
-            <p>ABOUT US</p>
-          </div>
-        ) : null}
-      </div> */}
     </div>
   );
 };

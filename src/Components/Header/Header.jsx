@@ -1,8 +1,12 @@
 import React, { useState } from "react";
-import pattalogo from "../Icons/pattalogo.svg";
+import userlogo from "../Icons/userlogo.svg";
+import favoritelogo from "../Icons/favoritelogo.svg";
+import searchicon from "../Icons/searchicon.svg";
 import "./Header.css";
+import ModalAuth from "../ModalAuth/ModalAuth";
 
 const Header = () => {
+  const [showModalAuth, setShowModalAuth] = useState(false);
   return (
     <div
       style={{
@@ -11,45 +15,64 @@ const Header = () => {
         position: "fixed",
         width: "100%",
         zIndex: 2,
-      }}
+      }} 
     >
+      <ModalAuth showModalAuth={showModalAuth} setShowModalAuth={setShowModalAuth} />
       <nav className="nav-active">
-      <div>user</div>
-      <div></div>
-        <img className="icon_navbar nav-item" src={pattalogo} alt="patta" />
-        <p className="nav-item all">
-          All
-          <div className="dropdown-menu drp_all">
-            <p>ALL SHOES</p>
-            <p>NEW</p>
-            <p>HOME</p>
-            <p>LIMITED EDITION</p>
-            <p>HIGH</p>
-            <p>MIDDLE</p>
-            <p>LOW</p>
-            <p>BRANDS</p>
-            <p>HISTORIES</p>
-            <p>ACCESSORIES</p>
-          </div>
-        </p>
-        <p className="nav-item new">
-          NEW
-          <div className="dropdown-menu drp_new">
-            <p>SHOES</p>
-            <p>COLLECTIONS</p>
-            <p>COLLABORATIONS</p>
-            <p>TECHNOLOGIES</p>
-            <p>HIGH</p>
-            <p>MIDDLE</p>
-            <p>LOW</p>
-            <p>BRANDS</p>
-            <p>ACCESSORIES</p>
-            <p>SNEAKERNEWS</p>
-          </div>
-        </p>
-        <p className="nav-item">COMING SOON</p>
-        <p className="nav-item">BRANDS</p>
-        <p className="nav-item">SALES</p>
+        <div className="user-menu">
+          <img
+            style={{ width: "30px", height: "30px", cursor: "pointer" }}
+            onClick={() => setShowModalAuth(!showModalAuth)}
+            src={userlogo}
+            alt="userlogo"
+          />
+          <img
+            style={{ width: "30px", height: "30px", cursor: "pointer" }}
+            src={favoritelogo}
+            alt="favoritelogo"
+          />
+          <img
+            style={{ width: "30px", height: "30px", cursor: "pointer" }}
+            src={searchicon}
+            alt="searchicon"
+          />
+        </div>
+        <div className="navbar nav-active">
+          <p className="nav-item"></p>
+          <p className="nav-item all">
+            All
+            <div className="dropdown-menu drp_all">
+              <p>ALL SHOES</p>
+              <p>NEW</p>
+              <p>HOME</p>
+              <p>LIMITED EDITION</p>
+              <p>HIGH</p>
+              <p>MIDDLE</p>
+              <p>LOW</p>
+              <p>BRANDS</p>
+              <p>HISTORIES</p>
+              <p>ACCESSORIES</p>
+            </div>
+          </p>
+          <p className="nav-item new">
+            NEW
+            <div className="dropdown-menu drp_new">
+              <p>SHOES</p>
+              <p>COLLECTIONS</p>
+              <p>COLLABORATIONS</p>
+              <p>TECHNOLOGIES</p>
+              <p>HIGH</p>
+              <p>MIDDLE</p>
+              <p>LOW</p>
+              <p>BRANDS</p>
+              <p>ACCESSORIES</p>
+              <p>SNEAKERNEWS</p>
+            </div>
+          </p>
+          <p className="nav-item">COMING SOON</p>
+          <p className="nav-item">BRANDS</p>
+          <p className="nav-item">SALES</p>
+        </div>
       </nav>
     </div>
   );

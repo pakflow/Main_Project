@@ -1,20 +1,104 @@
 .modal {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal_content {
-    padding: 20px;
-    border-radius: 12px;
-    background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  width: 40vw;
+  height: 80vh;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url(../Icons/cactus-jack.jpg);
+  background-size: 40vw auto;
 }
-.modal-disabled {
-    display: none;
+
+.modal_content.active {
+  transform: scale(1);
+}
+
+.modal_content h2 {
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+.modal_content label {
+  width: 40vw;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.modal_content input {
+  width: 38vw;
+  height: 5vh;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 0.2px solid black;
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+.modal_content button {
+  font-size: 25px;
+  outline: none;
+  border: none;
+}
+
+.google-logo {
+  width: 2vw;
+  height: auto;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.auth-method {
+  width: 40vw;
+  position: relative;
+  text-align: center;
+}
+
+.auth-method::before {
+  display: inline-block;
+  width: 43%;
+  border-top: 1px solid #333;
+  content: " ";
+  position: absolute;
+  top: 0.6em;
+  left: 0.5em;
+}
+
+.auth-method::after {
+  display: inline-block;
+  width: 43%;
+  border-top: 1px solid #333;
+  content: " ";
+  position: absolute;
+  top: 0.6em;
+  right: 0.5em;
 }

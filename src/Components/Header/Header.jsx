@@ -4,6 +4,7 @@ import favoritelogo from "../Icons/favoritelogo.svg";
 import searchicon from "../Icons/searchicon.svg";
 import "./Header.css";
 import ModalAuth from "../ModalAuth/ModalAuth";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showModalAuth, setShowModalAuth] = useState(false);
@@ -15,9 +16,12 @@ const Header = () => {
         position: "fixed",
         width: "100%",
         zIndex: 2,
-      }} 
+      }}
     >
-      <ModalAuth showModalAuth={showModalAuth} setShowModalAuth={setShowModalAuth} />
+      <ModalAuth
+        showModalAuth={showModalAuth}
+        setShowModalAuth={setShowModalAuth}
+      />
       <nav className="nav-active">
         <div className="user-menu">
           <img
@@ -44,7 +48,9 @@ const Header = () => {
             <div className="dropdown-menu drp_all">
               <p>ALL SHOES</p>
               <p>NEW</p>
-              <p>HOME</p>
+              <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+                <p>HOME</p>
+              </Link>
               <p>LIMITED EDITION</p>
               <p>HIGH</p>
               <p>MIDDLE</p>

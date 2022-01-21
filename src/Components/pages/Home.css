@@ -13,6 +13,7 @@
   
   .bkgrd {
     background: linear-gradient( rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0.768) ), url(../Icons/cactus-jack.jpg);
+    background-size: 100vw auto;
     background-repeat: no-repeat;
     background-position: center;
   }

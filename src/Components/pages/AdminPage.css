@@ -1,0 +1,10 @@
+.admin-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.768), rgba(0, 0, 0, 0.768)),
+    url("https://cdn.sanity.io/images/c1chvb1i/production/3409d3409ce1889dffb010fb548780372dfc12b9-1100x735.jpg/nike-patta-air-max-1-metallic-silver-monarch-pure-platinum-38.jpg");
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+}
+
+

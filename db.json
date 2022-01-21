@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "brand": "Nike",
+      "model": "Nike Air Force 1 Crater",
+      "price": "110",
+      "description": "The sneakers that helped define street style are reimagined for today's world. Designed with at least 20% recycled materials by weight, the thoughtfully crafted design includes speckled Crater Foam with a spacey mix of Nike Grind rubber and Nike foam materials. Translucent ripstop overlays around the heel reveal recycled foam. 100% recycled polyester laces mean no detail is left untouched. The Nike Air Force 1 Crater: the new old-school.",
+      "image1": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/89379c89-db5e-4889-ace3-094ee868413c/air-force-1-crater-womens-shoe-k5x7Tq.png",
+      "image2": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/1ea2b3be-c7cf-41b6-a6ce-70292fe83e0b/air-force-1-crater-womens-shoe-k5x7Tq.png",
+      "video": "https://www.youtube.com/watch?v=hJap5Gn3LjY&pp=ugMICgJydRABGAE%3D",
+      "id": 1
+    },
+    {
+      "brand": "cactus jack",
+      "model": "Nike SB Dunk Low Cactus Jack",
+      "price": "2148",
+      "description": "Travis Scott teamed up with Nike SB to release his first official skate shoe, the Nike SB Dunk Low Travis Scott (Regular Box), now available on StockX. This design follows a similar design aesthetic as seen on the Air Force 1 Low Travis Scott Cactus Jack, featuring an array of materials and prints. Unlike previous Travis Scott releases, these were not available on SNKRS and only available at select Nike SB stockists.  This Nike SB Dunk Low is composed of suede upper with paisley canvas and plaid flannel overlays. As the paisley overlays wear off, an elephant print is revealed. Embroidered text around the collar, rope laces, and La Flame’s Cactus Jack logo on the puffy tongues completes this design. These sneakers released in February of 2020 and retailed for $150.",
+      "image1": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/032/437/372/original/585882_01.jpg.jpeg?action=crop&width=950",
+      "image2": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/032/442/639/original/585882_08.jpg.jpeg?action=crop&width=950",
+      "video": "https://www.youtube.com/watch?v=3VtHuJn-MC8",
+      "id": 2
+    },
+    {
+      "brand": "Nike",
+      "model": "Nike Air Jordan 1 High Dior",
+      "price": "9722",
+      "description": "This Jordan 1 Retro High is composed of a white and grey leather upper with traditional Dior monogram print Swoosh. These shoes are made in Italy with premium materials. Co-branded icy translucent soles, Dior branded tongue and Wings logo, and a silver “Air Dior” hang tag completes the design. These sneakers released in April of 2020 and retailed for $2,000.",
+      "image1": "https://cdn-images.farfetch-contents.com/15/62/45/04/15624504_28291157_1000.jpg",
+      "image2": "https://cdn-images.farfetch-contents.com/15/62/45/04/15624504_28288461_1000.jpg",
+      "video": "https://www.youtube.com/watch?v=d-_A6SB-eJU",
+      "id": 3
+    },
+    {
+      "brand": "Nike",
+      "model": "Nike X Off-White SB Dunk Low University Gold Midnight Navy",
+      "price": "787",
+      "description": "Virgil Abloh pays homage to skate culture’s adoption of 1980’s Nike Basketball silhouettes with the Nike Dunk Low Off-White Michigan, now available on StockX. When Nike unveiled the Dunk as the centerpiece of their Nike College Color’s program in 1985, seven different colleges were represented in the first colorways offered, with Michigan was one of the first schools.  This Dunk Low is comprised of a university gold leather upper with midnight navy overlays. A unique secondary lacing system, zip-ties, and signature Off-White text on the sides completes the design. These sneakers released in December of 2019 for $170.",
+      "image1": "https://cdn-images.farfetch-contents.com/14/81/42/95/14814295_23875405_1000.jpg",
+      "image2": "https://cdn-images.farfetch-contents.com/14/81/42/95/14814295_23875408_1000.jpg",
+      "video": "https://www.youtube.com/watch?v=S7qD6lmn2mI",
+      "id": 4
+    }
+  ],
+  "brands": [
+    {
+      "brand": "cactus jack",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cactus_Jack_Records_-_Logo.svg/800px-Cactus_Jack_Records_-_Logo.svg.png",
+      "id": 1
+    },
+    {
+      "brand": "patta",
+      "logo": "https://seeklogo.com/images/P/patta-logo-A4E1883CBD-seeklogo.com.png",
+      "id": 2
+    },
+    {
+      "brand": "Nike",
+      "logo": "https://i.pinimg.com/originals/0b/6e/2b/0b6e2baaa2619f21bf90fd130dbbd531.jpg",
+      "id": 3
+    },
+    {
+      "brand": "New balance",
+      "logo": "https://w7.pngwing.com/pngs/340/831/png-transparent-new-balance-sneakers-shoe-adidas-logo-new-balance-text-converse-store.png",
+      "id": 4
+    },
+    {
+      "brand": "off-white",
+      "logo": "https://1000logos.net/wp-content/uploads/2021/05/Off-White-logo.png",
+      "id": 5
+    },
+    {
+      "brand": "Saucony",
+      "logo": "https://download.logo.wine/logo/Saucony/Saucony-Logo.wine.png",
+      "id": 6
+    },
+    {
+      "brand": "Reebok",
+      "logo": "https://esquilo.io/png/thumb/3p1LLBzkizPcFGI-Reebok-Logo-PNG-Photos.png",
+      "id": 7
+    },
+    {
+      "brand": "Dior",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dior_Logo.svg/2560px-Dior_Logo.svg.png",
+      "id": 8
+    },
+    {
+      "brand": "Adidas",
+      "logo": "https://w7.pngwing.com/pngs/417/858/png-transparent-adidas-adidas-text-photography-logo.png",
+      "id": 9
+    },
+    {
+      "brand": "Air Jordan",
+      "logo": "https://i.pinimg.com/originals/e3/7b/c6/e37bc6bbc9f37deb0e56d193864e4a29.png",
+      "id": 10
+    }
+  ]
+}

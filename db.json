@@ -39,6 +39,36 @@
       "image2": "https://cdn-images.farfetch-contents.com/14/81/42/95/14814295_23875408_1000.jpg",
       "video": "https://www.youtube.com/watch?v=S7qD6lmn2mI",
       "id": 4
+    },
+    {
+      "brand": "Nike",
+      "model": "Nike Air Force 1 Cactus Jack",
+      "price": "600",
+      "description": "Travis Scott and Nike add a new design to their growing Air Force arsenal with the Air Force 1 Low Travis Scott Cactus Jack, now available on StockX. After a year of sneaker world dominance, Nike is adding a twist to their latest collaborative AF 1 with Cactus Jack. This new design features a never before seen detachable lace cover that encloses with a heavy brass zipper.  This Travis AF-1 features a patchwork upper comprised of camouflage, corduroy, duck canvas, flannel, leather, suede and wool. Unmistakable Cactus Jack insignias are placed throughout the silhouette. A sail midsole and gum rubber outsole completes the design. These sneakers released in November of 2019 and retailed for $160.",
+      "image1": "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/f1pkkyopipdulsv5oyxe/air-force-1-cactus-jack-release-date.jpg",
+      "image2": "https://static.nike.com/a/images/t_prod_sc/w_640,c_limit,f_auto/gyiteiktvd0nmt8lyii3/air-force-1-cactus-jack-release-date.jpg",
+      "video": "https://www.youtube.com/watch?v=tG2INUMRrxE&pp=ugMICgJydRABGAE%3D",
+      "id": 5
+    },
+    {
+      "brand": "Adidas",
+      "model": "Adidas Yeezy Boost 350 V2 Zebra",
+      "price": "500",
+      "description": "Adidas is back with their latest Yeezy Boost 350 V2. Fresh off the heels of NBA All-Star Weekend, these Yeezy's are nicknamed the \"Zebras,\" and come in a classic white, black and red color scheme. Sporting a white-based Primeknit upper with black accents giving off a Zebra stripe vibe, “SPLY-350” displayed across the sides in red finished off by a translucent BOOST cushioned sole. To date they are the most limited adidas Yeezy release and have instantly become one of the most popular colorways. Their release date is set for February 25th, 2017. Retail is set at $220 and they will only be available in men’s sizing, no love for infants from Yeezus this time around. On June 24th, adidas will re-release the coveted “Zebras,” giving fans worldwide one more shot at obtaining one of 2017s most popular kicks. If you got lucky with the first release, already have a pair on lock from the re-release or don’t want to risk taking the “L,” check out the marketplace where you can buy and sell the “Zebra” adidas Yeezy 350 Boost V2 online now. Rock, stock or flip, the choice is yours and yours alone.",
+      "image1": "https://cdn-images.farfetch-contents.com/12/43/12/89/12431289_23446496_1000.jpg",
+      "image2": "https://cdn-images.farfetch-contents.com/12/43/12/89/12431289_23446499_1000.jpg",
+      "video": "https://www.youtube.com/watch?v=Hzc-adnIbsU&pp=ugMICgJydRABGAE%3D",
+      "id": 6
+    },
+    {
+      "brand": "Adidas",
+      "model": "Adidas Yeezy Slide Glow Green",
+      "price": "127",
+      "description": "Constructed of bright Glow Green EVA foam, the adidas Yeezy Slide Glow Green provides lightweight durability with a luminous look. From there, strategic groove placement on the underfoot enhances traction and comfort.  The adidas Yeezy Slide Glow Green released in September of 2021 and retailed for $80.",
+      "image1": "https://cdn-images.farfetch-contents.com/17/25/69/45/17256945_35857082_1000.jpg",
+      "image2": "https://cdn-images.farfetch-contents.com/17/25/69/45/17256945_35855502_1000.jpg",
+      "video": "https://www.youtube.com/watch?v=cy7u2OGvvjw",
+      "id": 7
     }
   ],
   "brands": [

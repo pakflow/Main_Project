@@ -43,10 +43,15 @@ const Header = () => {
         </div>
         <div className="navbar nav-active">
           <p className="nav-item"></p>
+              
           <p className="nav-item all">
+          <Link to="/all" style={{ textDecoration: "none"}} className="nav-item all navbar nav-active nav" >
             All
+            </Link>
             <div className="dropdown-menu drp_all">
+            <Link to="/all" style={{ textDecoration: "none", color: "black" }}>
               <p>ALL SHOES</p>
+              </Link>
               <p>NEW</p>
               <Link to="/" style={{ textDecoration: "none", color: "black" }}>
                 <p>HOME</p>
@@ -60,6 +65,7 @@ const Header = () => {
               <p>ACCESSORIES</p>
             </div>
           </p>
+          
           <p className="nav-item new">
             NEW
             <div className="dropdown-menu drp_new">

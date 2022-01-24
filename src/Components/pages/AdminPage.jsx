@@ -6,20 +6,17 @@ import "./AdminPage.css";
 
 const AdminPage = () => {
   return (
-  <> 
-<div className="admin-page">
-  <div className="brandlist">
-    <div style={{height: "200px"}}></div>
-  <Grid container rowSpacing={1}>
-      <AdminBrandsList />
-      <AdminProductList />
-      </Grid>
+    <>
+      <div className="admin-page">
+        <div className="brandlist">
+          <div style={{ height: "200px" }}></div>
+          <Grid container rowSpacing={1}>
+            <AdminBrandsList />
+            <AdminProductList />
+          </Grid>
+        </div>
       </div>
-
-      {/* <AddProductModal /> */}
-      {/* <AdminProductsList /> */}
-      </div>
-      </>
+    </>
   );
 };
 

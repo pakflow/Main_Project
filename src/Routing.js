@@ -37,7 +37,8 @@ const Routing = () => {
         <Route path={item.link} element={item.element} />
       ))}
       {user
-        ? ADMIN_ROUTES.map((item) => (
+        ?
+         ADMIN_ROUTES.map((item) => (
             <Route
               path={item.link}
               element={
@@ -49,9 +50,9 @@ const Routing = () => {
               }
             />
           ))
-        : null}
+         : null }
     </Routes>
-  );
+  )
 };
 
 export default Routing;

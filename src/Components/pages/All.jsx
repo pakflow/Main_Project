@@ -7,26 +7,21 @@ const All = () => {
   useEffect(() => {
     getProducts();
   }, []);
-  return ( 
-   <>
-    <div>
-        {products.length > 0 ? (
-            products.map((item) => (
-                <div>
-                    <div className="product-img">
-                        <img src={item.image1}/>
-                    </div>
-                        <div className="product-model">
-
-                        </div>
-                        <div className="product-price">
-
-                        </div>
-                </div>
-            ))
-        ) : (null)}
-        </div>  
-  </>
-  )};
+  return (
+    <>
+      <div>
+        {products.map((item) => (
+          <div>
+            <div className="product-img">
+              <img src={item.image1} alt="img-product"/>
+            </div>
+            <div className="product-model"></div>
+            <div className="product-price"></div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
 
 export default All;

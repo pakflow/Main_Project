@@ -12,18 +12,6 @@ export const useAuth = () => {
   return useContext(authContext);
 };
 
-const INIT_STATE = {
-    googleUser: null,
-}
-const reducer = (state = INIT_STATE, action) => {
-    switch (action.type) {
-        case "SET_USER":
-            return {...state, googleUser: action.payload};
-            default:
-                return state;
-    }
-}
-
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");

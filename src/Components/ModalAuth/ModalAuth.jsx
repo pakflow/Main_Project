@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { useAuth } from "../Contexts/authContext";
 import { Link } from "react-router-dom";
 import "./ModalAuth.css";
 
 const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
-  const [showCreateAcc, setShowCreateAcc] = useState(false);
   const {
-    email,
+    user,
+    user: {email},
     setEmail,
     password,
     setPassword,
@@ -28,8 +28,8 @@ const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
         className={showModalAuth ? "modal_content active" : "modal_content"}
         onClick={(e) => e.stopPropagation()}
       >
-        {showCreateAcc === false ? (
-          !hasAccount ? (
+        {!hasAccount ?
+          (!user ? (
             <>
               <h2>Login</h2>
               <label>Email</label>
@@ -59,7 +59,7 @@ const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
                   backgroundColor: "black",
                   marginTop: "4vh",
                 }}
-                onClick={(handleLogin ? () => setHasAccount(!hasAccount) : null)}
+                onClick={handleLogin}
               >
                 Sign in
               </button>
@@ -80,7 +80,7 @@ const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
               >
                 <img
                   className="google-logo"
-                  onClick={(authWithGoogle, () => setHasAccount(!hasAccount))}
+                  onClick={authWithGoogle}
                   src="https://cdn-icons-png.flaticon.com/512/2875/2875404.png"
                   alt="google"
                 />
@@ -92,7 +92,7 @@ const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
                   fontSize: "20px",
                   marginTop: "1vh",
                 }}
-                onClick={() => setShowCreateAcc(true)}
+                onClick={() => setHasAccount(!hasAccount)}
               >
                 Create account
               </p>
@@ -109,7 +109,7 @@ const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
                   backgroundColor: "black",
                   marginTop: "4vh",
                 }}
-                onClick={(handleLogout, () => setHasAccount(!hasAccount))}
+                onClick={handleLogout}
               >
                 Sign out
               </button>
@@ -155,10 +155,20 @@ const ModalAuth = ({ showModalAuth, setShowModalAuth }) => {
                 backgroundColor: "black",
                 marginTop: "4vh",
               }}
-              onClick={(handleSignUp, () => setShowCreateAcc(false))}
+              onClick={handleSignUp}
             >
               Create
             </button>
+            <p
+                style={{
+                  cursor: "pointer",
+                  fontSize: "20px",
+                  marginTop: "1vh",
+                }}
+                onClick={() => setHasAccount(!hasAccount)}
+              >
+                Sign In
+              </p>
           </>
         )}
       </div>

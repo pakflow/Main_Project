@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import userlogo from "../Icons/userlogo.svg";
 import favoritelogo from "../Icons/favoritelogo.svg";
 import searchicon from "../Icons/searchicon.svg";
-import "./Header.css";
+// import "./Header.scss";
 import ModalAuth from "../ModalAuth/ModalAuth";
 import { Link } from "react-router-dom";
+import s from "./Header.module.scss";
+import cn from "classnames";
 
 const Header = () => {
   const [showModalAuth, setShowModalAuth] = useState(false);
@@ -22,33 +24,28 @@ const Header = () => {
         showModalAuth={showModalAuth}
         setShowModalAuth={setShowModalAuth}
       />
-      <nav className="nav-active">
-        <div className="user-menu">
+      <nav className={s.nav}>
+        <div className={s.userMenu}>
           <img
-            style={{ width: "30px", height: "30px", cursor: "pointer" }}
+            className={s.iconNavbar}
             onClick={() => setShowModalAuth(!showModalAuth)}
             src={userlogo}
             alt="userlogo"
           />
-          <img
-            style={{ width: "30px", height: "30px", cursor: "pointer" }}
-            src={favoritelogo}
-            alt="favoritelogo"
-          />
-          <img
-            style={{ width: "30px", height: "30px", cursor: "pointer" }}
-            src={searchicon}
-            alt="searchicon"
-          />
+          <img className={s.iconNavbar} src={favoritelogo} alt="favoritelogo" />
+          <img className={s.iconNavbar} src={searchicon} alt="searchicon" />
         </div>
-        <div className="navbar nav-active">
-          <p className="nav-item"></p>
+        <div
+          className={cn(s.navbar, s.navActive)}
+          // className="navbar nav-active"
+        >
+          <p className={s.navItem}></p>
 
-          <p className="nav-item all">
+          <p className={cn(s.navItem, s.all)}>
             <Link to="/all" style={{ textDecoration: "none" }}>
               All
             </Link>
-            <div className="dropdown-menu drp_all">
+            <div className={s.dropdownMenu}>
               <Link
                 to="/all"
                 style={{ textDecoration: "none", color: "black" }}
@@ -69,9 +66,9 @@ const Header = () => {
             </div>
           </p>
 
-          <p className="nav-item new">
+          <p className={cn(s.navItem, s.new)}>
             NEW
-            <div className="dropdown-menu drp_new">
+            <div className={s.dropdownMenu}>
               <p>SHOES</p>
               <p>COLLECTIONS</p>
               <p>COLLABORATIONS</p>
@@ -84,9 +81,9 @@ const Header = () => {
               <p>SNEAKERNEWS</p>
             </div>
           </p>
-          <p className="nav-item">COMING SOON</p>
-          <p className="nav-item">BRANDS</p>
-          <p className="nav-item">SALES</p>
+          <p className={s.navItem}>COMING SOON</p>
+          <p className={s.navItem}>BRANDS</p>
+          <p className={s.navItem}>SALES</p>
         </div>
       </nav>
     </div>

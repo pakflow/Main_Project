@@ -1,9 +1,9 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { useAuth } from "./Components/Contexts/authContext";
-import AdminPage from "./Components/pages/AdminPage";
-import All from "./Components/pages/All";
-import Home from "./Components/pages/Home";
+import { useAuth } from "./components/Contexts/authContext";
+import AdminPage from "./pages/AdminPage";
+import All from "./pages/All";
+import Home from "./pages/Home";
 
 const Routing = () => {
   let PUBLIC_ROUTES = [

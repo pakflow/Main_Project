@@ -1,5 +1,5 @@
 import React from "react";
-import nikepatta from "../Videos/nikepatta.mp4";
+import nikepatta from "../components/Videos/nikepatta.mp4";
 import './Home.css';
 
 const Home = () => {

@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import AuthContextProvider from "./Components/Contexts/authContext";
-import BrandsContextProvider from "./Components/Contexts/brandsContext";
-import ProductsContextProvider from "./Components/Contexts/productsContext";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
+import {
+  Header,
+  Footer,
+  ProductsContextProvider,
+  BrandsContextProvider,
+  AuthContextProvider,
+} from "./components";
 import "./index.css";
 import Routing from "./Routing";
 

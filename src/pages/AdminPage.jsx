@@ -1,8 +1,9 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import AdminBrandsList from "../AdminBrandList/AdminBrandList";
-import AdminProductList from "../AdminProductList/AdminProductList";
+import AdminBrandsList from "../components/AdminBrandList/AdminBrandList";
+import AdminProductList from "../components/AdminProductList/AdminProductList";
 import "./AdminPage.css";
+
 
 const AdminPage = () => {
   return (

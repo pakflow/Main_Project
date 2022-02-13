@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import { productsContext } from "../Contexts/productsContext";
+import { productsContext } from "../components/Contexts/productsContext";
 import "./All.css";
 
 const All = () => {
